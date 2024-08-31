@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+    font-family: "Catamaran", sans-serif;
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: .7rem;
+}
+
+p {
+    font-size: 2rem;
+}
