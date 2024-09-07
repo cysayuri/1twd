@@ -1,6 +1,34 @@
+.ocultar {
+    opacity: 0;
+    pointer-events: none;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 
+.modaaal {
+    background: #0000009d;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
 
-body {
-    background: #000 !important;
+    &.active {
+        z-index: 20;
+        opacity: 1;
+    }
+}
+
+.modaaal__content {
+    background: #fff;
+    height: 300px;
+    width: 500px;
 }
