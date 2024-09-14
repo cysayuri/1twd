@@ -1,3 +1,10 @@
+:root {
+    --font: 'Quicksand', sans-serif;
+    --blue: #2d57ca;
+    --light: #fff;
+    --pink: #ed145b;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +17,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: var(--font);
 }
 
 .container {
@@ -17,4 +25,57 @@ body {
     width: 100%;
     margin: auto;
     padding:4rem;
+}
+
+.box {
+    background-color: var(--blue);
+    width: 450px;
+    height: 250px;
+    padding: 20px;
+    margin: 3rem 0;
+    transition: background-color 3s linear;
+    /* transition-property: background-color;
+    transition-duration: 3s;
+    transition-timing-function: linear; */
+    
+    &:hover {
+        background-color: var(--pink);
+    }
+}
+
+.icon {
+    color: var(--light);
+    font-size: 5rem;
+    position: relative;
+}
+
+.box:hover .icon {
+    animation: rocket 3s ease infinite alternate;
+}
+
+@keyframes rocket {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: calc(100% - 5rem);
+        top: 0;
+    }
+
+    50% {
+        left: calc(100% - 5rem);
+        top: calc(100% - 5rem);
+    }
+    
+    75% {
+        left: 0;
+        top: calc(100% - 5rem);
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
 }
