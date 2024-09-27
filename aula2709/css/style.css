@@ -18,9 +18,29 @@ body {
 .intro {
     background: #292526;
     color: #fff;
+    position: relative;
+
+    &:before, &:after {
+        content: '';
+        background: url(../images/effect.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 550px;
+        height: 300px;
+    }
+
+    &:before {
+        top: -40px;
+        right: -40px;
+        transform: rotate(200deg);
+    }
 }
 
 .intro__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 130px 0;
+
     h1 {
         font-size: 7rem;
         margin-bottom: 30px;
@@ -28,6 +48,20 @@ body {
     
     p {
         font-size: 2rem;
+        position: relative;
+        max-width: 800px;
+        margin: 0 0 0 auto;
+
+        &:before {
+            content: '';
+            background-color: #74dbe2;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 5px;
+            height: 100%;
+        }
     }
 }
 
