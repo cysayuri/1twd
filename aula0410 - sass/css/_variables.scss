@@ -1,0 +1,35 @@
+/* ___ Fonts ___ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+$font: 'Roboto', 'Calibri', 'sans-serif';
+ 
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+ 
+/* ___ Colors ___ */
+$primary: #282828;
+$secondary: #FBFBFB;
+
+$blue: #24A1CC;
+$violet: #9F529A;
+$purple: #AC3F79;
+$pink: #DB5688;
+
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 770px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;

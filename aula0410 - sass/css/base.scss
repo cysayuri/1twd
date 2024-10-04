@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: $secondary;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $primary;
+    font-family: $font;
+    font-size: 1rem;
+    line-height: 1.7em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    position: relative;
+    
+    @include MQ($L) {
+        margin: 0 40px;
+    }
+
+    @include MQ($S) {
+        margin: 0 20px;
+    }
+}
+
+.container {
+    margin: 50px auto;
+}
+
+.flex {
+    &--ct {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &--sb {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &--st {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &--end {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
