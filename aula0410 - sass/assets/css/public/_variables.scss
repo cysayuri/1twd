@@ -1,0 +1,15 @@
+$primary: #24cc70;
+$secondary: #b826cb;
+
+
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 770px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;

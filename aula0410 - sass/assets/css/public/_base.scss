@@ -1,0 +1,7 @@
+body {
+    background: $primary;
+
+    @include MQ($S) {
+        background: $secondary;
+    }
+}

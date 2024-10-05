@@ -1,0 +1,11 @@
+.home__banner {
+    background-color: #fefefe;
+
+    p {
+        color: red;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
