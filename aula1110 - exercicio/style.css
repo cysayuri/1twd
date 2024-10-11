@@ -1,0 +1,84 @@
+/* ___ Fonts ___ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap");
+/* ___ Colors ___ */
+/* ___ Media Query ___ */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fef7f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222d2c;
+  font-family: "Montserrat", "Roboto", "Calibri", "sans-serif";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 50px 0;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+.flex--ct {
+  display: flex;
+  justify-content: center;
+}
+.flex--sb {
+  display: flex;
+  justify-content: space-between;
+}
+.flex--end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1, h2, h3, h4, p {
+  font-family: "Montserrat", "Roboto", "Calibri", "sans-serif";
+  color: #3f2a18;
+  line-height: 0.9em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+h1 {
+  color: #f4f4f4;
+  font-family: "Tangerine", "Roboto", "Calibri", "sans-serif";
+  font-size: 12.5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */
