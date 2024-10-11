@@ -1,7 +1,7 @@
 body {
-    background: $primary;
+    background: $white;
 
     @include MQ($S) {
-        background: $secondary;
+        background: $black;
     }
 }

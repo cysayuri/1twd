@@ -1,5 +1,10 @@
+$font: 'Roboto', Calibri;
+
 $primary: #24cc70;
 $secondary: #b826cb;
+
+$white: #f5f5f5;
+$black: #282828;
 
 
 @mixin MQ($size) {

@@ -1,0 +1,30 @@
+.btn {
+    background: transparent;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    cursor: pointer;
+    color: $primary;
+    display: inline-block;
+    font-family: $font;
+    font-size: 1rem;
+    margin: 0;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    
+    &:hover {
+        background: $primary;
+        color: #fff;
+    }
+    
+    &--secondary {
+        border-color: $secondary;
+        color: $secondary;
+        
+        &:hover {
+            background: $secondary;
+            color: #fff;
+        }
+    }
+}
