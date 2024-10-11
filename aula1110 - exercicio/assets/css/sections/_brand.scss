@@ -1,0 +1,37 @@
+.brand {
+    box-sizing: border-box;
+    height: 100vh;
+    position: relative;
+
+    &::after {
+        background: url(./assets/images/brand/img-2.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: '';
+        border-radius: 15px;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    
+    img {
+        object-fit: cover;
+        border-radius: 35px;
+        max-height: 550px;
+        max-width: 550px;
+        width: 50%;
+    }
+
+    &__text {
+        width: 48%;
+        align-items: start;
+        flex-direction: column;
+
+        h2 {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+    }
+}

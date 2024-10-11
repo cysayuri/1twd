@@ -41,6 +41,11 @@ body {
         justify-content: space-between;
     }
     
+    &--st {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
     &--end {
         display: flex;
         justify-content: flex-end;
