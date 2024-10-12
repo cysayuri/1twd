@@ -1,0 +1,21 @@
+.brand {
+    position: relative;
+
+    img {
+        max-height: 550px;
+        max-width: 550px;
+        width: 50%;
+        border-radius: 35px;
+        object-fit: cover;
+    }
+
+    &__text {
+        width: 48%;
+        flex-direction: column;
+
+        h2 {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+    }
+}

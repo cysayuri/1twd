@@ -1,0 +1,57 @@
+.concept {
+    background: $secondary;
+    margin: 50px auto 70px;
+    align-items: center;
+    flex-direction: row;
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        width: 60%;
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__block {
+        width: calc(100% - 80px);
+        flex-direction: column;
+        padding: 40px;
+
+        &--elegant {
+            background: $black;
+        }
+
+        &--better {
+            background: $primary;
+        }
+
+        h3 {
+            color: $white;
+            text-align: center;
+            text-shadow: 1px 1px 5px #a6a6a6;
+        }
+
+        p {
+            color: $white;
+            text-align: justify;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__text {
+        width: 40%;
+        text-align: right;
+
+        h2, p {
+            color: $tertiary;
+            max-width: 400px;
+            margin: 40px 60px 40px auto;
+        }
+    }
+}
