@@ -1,0 +1,57 @@
+// Fonts
+$font-regular: 'Roboto Mono Regular', 'Open Sans Regular', 'sans-serif';
+$font-medium: 'Roboto Mono Medium', 'Open Sans Semibold', 'sans-serif';
+$font-semibold: 'Roboto Mono Semibold', 'Open Sans Semibold', 'sans-serif';
+$font-bold: 'Roboto Mono Bold', 'Open Sans Bold', 'sans-serif';
+$font-light: 'Roboto Mono Light', 'Open Sans Light', 'sans-serif';
+$font-thin: 'Roboto Mono Thin', 'Open Sans Light', 'sans-serif';
+
+// Colors
+$black: #111111;
+$light-bg: #4E4E4E;
+$dark-bg: #202020;
+$foreground-color: #f5f5f5;
+$primary-color: #E8B02C;
+$text-color: #c9c9c9;
+$font-color: #e4e4e4;
+
+// Media Query
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// Sizes
+$XS: 480px;
+$S: 758px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;
+
+@mixin btn-primary($heigth, $width : 160px) {
+    background: $primary-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono Regular';
+    font-size: 15px;
+    height: $heigth;
+    width: $width;
+}
+
+@mixin bg-image ($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$movie-images: (
+    black-panther: url('../assets/img/black-panther.png'),
+    suicide-squad: url('../assets/img/suicide-squad.png'),
+    wonder-woman: url('../assets/img/wonder-woman.png'),
+    fast-and-furious: url('../assets/img/fast-and-furious.png'),
+    captain-america: url('../assets/img/captain-america.png')
+);
+
+$header-height : 50px;
