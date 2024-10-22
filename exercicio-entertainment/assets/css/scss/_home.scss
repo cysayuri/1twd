@@ -1,0 +1,219 @@
+.navigation {
+    background: #2B2B2B;
+    color: $font-color;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: sticky;
+    top: $header-height;
+    width: 100%;
+
+    &__item {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+
+        &--selected{
+            color: $primary-color;
+            transition: all 0.5s;
+
+            &:after {
+                background: #2b2b2b;
+                content: "";
+                height: 40px;
+                position: absolute;
+                top: 59px;
+                transform: rotate(45deg);
+                width: 40px;
+            }
+
+            .navigation__icon {
+                fill: $primary-color;
+            }
+        }
+
+    }
+
+    &__icon {
+        fill: $font-color;
+        height: 25px;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        z-index: 1;
+    }
+
+    &__item + &__item {
+        border-left: 2px solid #333;
+    }
+}
+
+.section {
+    background-color: #333;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+
+    &__img {
+        height: 100%;
+        width: 80%;
+    }
+
+    &__info {
+        background-color: #2b2b2b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 40px;
+        width: 20%;
+    }
+
+    &__title {
+        color: $font-color;
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        li {
+            color: $font-color;
+            font-size: 20px;
+            height: 50px;
+        }
+    }
+
+    &__button {
+        @include btn-primary(50px);
+        color: #000;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.banner {
+    @include bg-image("../assets/img/producao-de-video-EAD.png");
+    height: 600px;
+    margin-top: $header-height;
+
+    &__background {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.section__about-us {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+
+    .about-us__item {
+        color: #c9c9c9;
+        text-align: center;
+        max-width: 300px;
+
+        svg {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.section__filmes {
+    height: 540px;
+
+    .home-section__img {
+        @include bg-image("../assets/img/filme.png");
+    }
+
+    .filmes{
+        &__info {
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+}
+
+.section__musicas {
+    height: 550px;
+
+    .home-section__img {
+        @include bg-image("../assets/img/musica.png");
+    }
+}
+
+.section__contato {
+    justify-content: center;
+    padding: 40px 0px;
+
+    .contato{
+        &__form {
+            color: $text-color;
+            width: 350px;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin: 10px auto 30px;
+            text-align: center;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            width: 100%;
+
+            .item {
+                &__label {
+                    margin-bottom: 10px;
+                }
+
+                &__input, &__textarea {
+                    background: transparent;
+                    border: 1px solid $text-color;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-family: "Roboto Mono Regular";
+                    padding-left: 10px;
+    
+                    &:focus {
+                        border-color: $primary-color;
+                        outline: none;
+                    }
+                }
+
+                &__input {
+                    height: 40px;
+                }
+    
+                &__textarea {
+                    height: 100px;
+                    padding: 10px;
+                    resize: none;
+                }
+            }
+        }
+
+        &__button {
+            text-align: right;
+            
+            &-btn {
+                @include btn-primary(40px, 145px);
+            }
+        }
+    }
+}
