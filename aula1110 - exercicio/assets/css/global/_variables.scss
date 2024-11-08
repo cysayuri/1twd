@@ -1,0 +1,33 @@
+/* ___ Fonts ___ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+$title:  'Tangerine', 'Roboto', 'Calibri', 'sans-serif';
+$font: 'Montserrat', 'Roboto', 'Calibri', 'sans-serif';
+ 
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+ 
+/* ___ Colors ___ */
+$primary: #3f2a18;
+$secondary: #ca977b;
+$tertiary: #fef7f0;
+
+$black: #222d2c;
+$white: #f4f4f4;
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 770px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;

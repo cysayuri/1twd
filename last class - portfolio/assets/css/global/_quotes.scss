@@ -1,0 +1,30 @@
+blockquote {
+    margin: 40px 0;
+    quotes: none;
+
+    p {
+        color: $primary;
+        font-family: $title;
+        font-size: 24px;
+        font-weight: $bold;
+        line-height: 1.5em;
+        margin: 0 0 10px;
+    }
+    
+    cite {
+        color: $black;
+        font-family: $title;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 350;
+        margin: 0;
+    }
+
+    &.has-text-align-center {
+        text-align: center;
+    }
+
+    &.has-text-align-right {
+        text-align: right;
+    }
+}

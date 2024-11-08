@@ -1,0 +1,54 @@
+//Button Code
+button, .btn, input[type="submit"] {
+    align-items: center;
+    background: transparent;
+    border: 1px solid $primary;
+    border-radius: 15px;
+    cursor: pointer;
+    color: $primary;
+    display: flex;
+    font: 1.1rem $font;
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding: 8px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+.btn {
+    &--secondary {
+        border-color: $secondary;
+        color: $secondary;
+        
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+    
+    &--icon i {
+        margin: 3px 0 0 5px;
+        font-size: 1.3rem;
+    }
+    
+    &--link {
+        background: transparent;
+        border: none;
+        color: #2c2c2c;
+        height: auto;
+        padding: 5px 10px;
+        text-decoration: underline;
+        text-transform: none;
+        
+        &:hover {
+            background: transparent;
+            color: $primary;
+        }
+    }
+}

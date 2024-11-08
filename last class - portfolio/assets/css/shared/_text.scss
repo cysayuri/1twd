@@ -1,0 +1,32 @@
+h1, h2, h3, h4, p {
+    font-family: $font;
+    color: $primary;
+    line-height: 1.2em;
+    font-weight: $bold;
+    margin: 20px 0;
+}
+
+h1 {
+    font-family: $title;
+    font-size: 10rem;
+}
+
+h2 {
+    font-family: $title;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: $regular;
+    line-height: 2em;
+}

@@ -1,0 +1,33 @@
+/* ___ Fonts ___ */
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$title:  'Faculty Glyphic', 'Roboto', 'Calibri', 'sans-serif';
+$font: 'Open Sans', 'Roboto', 'Calibri', 'sans-serif';
+ 
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+ 
+/* ___ Colors ___ */
+$primary: #2A9D8F;
+$secondary: #CC2936;
+$tertiary: #A1E44D;
+
+$black: #141414;
+$white: #f7f7f7;
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 770px;
+$M: 960px;
+$L: 1024px;
+$XL: 1130px;
