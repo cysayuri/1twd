@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'text' as *;
+
 html {
     scroll-behavior: smooth;
     margin: 0;
@@ -9,7 +12,7 @@ html {
 }
 
 body {
-    background: $white;
+    background: #f7f7f7;
     color: $black;
     font-family: $font;
     margin: 0;

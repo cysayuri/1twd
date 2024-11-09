@@ -1,16 +1,17 @@
-@import 'shared/variables';
-@import 'shared/base';
-@import 'shared/text';
+@use 'shared/variables';
+@use 'shared/text';
+@use 'shared/base';
 
-@import 'global/buttons';
-@import 'global/chips';
-@import 'global/form';
-@import 'global/grid';
-@import 'global/list';
-@import 'global/quotes';
-@import 'global/table';
+@use 'global/buttons';
+@use 'global/chips';
+@use 'global/form';
+@use 'global/grid';
+@use 'global/list';
+@use 'global/quotes';
+@use 'global/table';
 
-@import 'components/menu';
-@import 'components/footer';
+@use 'components/menu';
+@use 'components/footer';
+@use 'components/slider';
 
-@import 'sections/banner';
+@use 'sections/banner';

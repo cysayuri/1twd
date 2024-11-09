@@ -1,3 +1,6 @@
+@use '../shared/variables' as *;
+@use '../shared/text' as *;
+
 blockquote {
     margin: 40px 0;
     quotes: none;

@@ -1,3 +1,6 @@
+@use '../shared/variables' as *;
+@use '../shared/text' as *;
+
 //Button Code
 button, .btn, input[type="submit"] {
     align-items: center;
@@ -18,7 +21,7 @@ button, .btn, input[type="submit"] {
     
     &:hover {
         background: $primary;
-        color: $white;
+        color: #f7f7f7;
     }
 }
 
